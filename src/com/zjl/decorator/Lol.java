@@ -9,13 +9,13 @@ package com.zjl.decorator;
  */
 public class Lol extends Icon {
    
-    public Lol(IIcon icon) {
-    	super(icon);
+    public Lol(Card card) {
+    	super(card);
     }
 
 	@Override
 	public void showIcon() {
-		icon.showIcon();
+		card.showIcon();
 		lolIcon();
 	}
 

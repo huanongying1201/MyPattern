@@ -2,20 +2,14 @@ package com.zjl.decorator;
 
 /**
  * 
- * 描述:用户资料卡
+ * 描述:资料卡接口
  * @author  zhoujialin
- * @created 2018年9月30日 上午10:23:41
+ * @created 2018年9月30日 上午10:24:59
  * @since   v1.0.0
  */
-public class Card implements IIcon {
-
-	public Card(String nickName) {
-		System.out.println(nickName + "点亮了以下图标：");
-	}
-
-	@Override
-	public void showIcon() {
-		// Do nothing.
-	}
-
+public interface Card {
+	/**
+	 * 展示资料卡
+	 */
+	void showIcon();
 }

@@ -9,13 +9,13 @@ package com.zjl.decorator;
  */
 public class QQGame extends Icon {
    
-    public QQGame(IIcon icon) {
-    	super(icon);
+    public QQGame(Card card) {
+    	super(card);
     }
 
 	@Override
 	public void showIcon() {
-		icon.showIcon();
+		card.showIcon();
 		QQGameIcon();
 	}
 

@@ -7,11 +7,11 @@ package com.zjl.decorator;
  * @created 2018年9月30日 上午10:22:42
  * @since   v1.0.0
  */
-public abstract class Icon implements IIcon {
+public abstract class Icon implements Card {
 	
-    protected IIcon icon;
+    protected Card card;
     
-    public Icon(IIcon icon) {
-        this.icon = icon;
+    public Icon(Card card) {
+        this.card = card;
     }
 }

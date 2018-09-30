@@ -14,7 +14,7 @@ public class MyTest {
     @Test
     public void test() {
     	//lilei点亮的qq图标
-        IIcon liLei = new Card("lilei");
+    	Card liLei = new User("lilei");
         liLei = new Lol(liLei);
         liLei = new Qzone(liLei);
         liLei.showIcon();
@@ -22,7 +22,7 @@ public class MyTest {
         System.out.println("");
         
         //hanmei点亮的qq图标
-        IIcon hanMei = new Card("hanmei");
+        Card hanMei = new User("hanmei");
         hanMei = new QQGame(hanMei);
         hanMei = new Qzone(hanMei);
         hanMei = new Lol(hanMei);

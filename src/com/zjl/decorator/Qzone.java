@@ -9,13 +9,13 @@ package com.zjl.decorator;
  */
 public class Qzone extends Icon {
    
-    public Qzone(IIcon icon) {
-    	super(icon);
+    public Qzone(Card card) {
+    	super(card);
     }
 
 	@Override
 	public void showIcon() {
-		icon.showIcon();
+		card.showIcon();
 		qzoneIcon();
 	}
 
