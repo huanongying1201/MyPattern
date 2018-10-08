@@ -1,7 +1,5 @@
 package com.zjl.decorator;
 
-import org.junit.jupiter.api.Test;
-
 /**
  * 
  * 描述:测试类
@@ -9,11 +7,10 @@ import org.junit.jupiter.api.Test;
  * @created 2018年9月30日 上午10:22:19
  * @since   v1.0.0
  */
-public class MyTest {
-    
-    @Test
-    public void test() {
-    	//lilei点亮的qq图标
+public class Main {
+	
+	public static void main(String[] args) {
+		//lilei点亮的qq图标
     	Card liLei = new User("lilei");
         liLei = new Lol(liLei);
         liLei = new Qzone(liLei);
@@ -28,6 +25,6 @@ public class MyTest {
         hanMei = new Lol(hanMei);
         hanMei = new Cf(hanMei);
         hanMei.showIcon();
-    }
+	}
 
 }
